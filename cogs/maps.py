@@ -43,7 +43,7 @@ class Maps(commands.Cog):
             async with aiohttp.ClientSession() as session:
                 async with session.get(URL) as resp:
                     if resp.status != 200:
-                        return await ctx.send('Błąd pobierania :/')
+                        return await ctx.send('Błąd pobierania')
                     else:
                         data = io.BytesIO(await resp.read())
                         await ctx.send(file=discord.File(data, "map.png"))
