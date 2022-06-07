@@ -28,11 +28,26 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
-            name='[Brak implementacji] | !build @klasa @pod_co',
+            name='!build @klasa @pod_co',
             value='• Zwraca proponowany build danej '
             '@klasy **(necro, monk, bar, crus, hun, wiz)** oraz '
             '@pod_jakie instancje ma być używany **(zlecenia, szczelina_pradawna, szczelina_wyzwań, lochy, levelowanie, pvp, relik, solo_farma)** ',
             inline=False
+        )
+        embed.add_field(
+            name='!horadrim @nazwa',
+            value='• Wyświetla informacje o danym naczyniu, gdzie go zdobyć oraz '
+            'jakie warunki musisz spełniać by wypadł. Możliwe argumenty: \n'
+            '> **all**  - wyświetla infografikę o wszystkich naczyniach z krótkim info \n'
+            "> **cal**  - Miłosierdzie Caldesanna  | Caldensann's Compassion\n"
+            "> **cat**  - Pobożność Cathana        | Cathan's Piety\n"
+            "> **nam**  - Wina Bezimiennych        | Guilt if the Nameless\n"
+            "> **ibe**  - Wytrwałość Iben Fahda    | Iben Fahds's Tenacity\n"
+            "> **cain** - Wizja Jareda Caina       | Jered Cain's Vision\n"
+            "> **nil**  - Precyzja Nilfura         | Nilfur's Precision \n"
+            "> **nor**  - Wiedza Tiraja            | Nor Tiraj's Knowlage\n"
+            "> **tal**  - Autorytet Tal Rashy      | Tal Rasha's Authority\n"
+            "> **kul**  - Pomysłowość Zoltun Kuula | Zoltun Kuule's Ingenuity\n"
         )
         await ctx.send(embed=embed)
 

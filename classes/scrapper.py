@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from more_itertools import first
 from requests_html import AsyncHTMLSession
 
+# initialize helper class
 asession = AsyncHTMLSession()
 
 class Scrapper:

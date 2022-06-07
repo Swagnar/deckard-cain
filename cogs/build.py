@@ -7,14 +7,14 @@ from classes.scrapper import Scrapper
 # initialize helper class
 myScrapper = Scrapper()
 
-class Build(commands.Cog):
+class Builds(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print('Build cog is loaded')
+        print('Builds cog is loaded')
         
 
     @commands.command()
@@ -66,5 +66,5 @@ class Build(commands.Cog):
             #await myScrapper.return_build_articles(classes[userClass], metas[instance])
 
 def setup(bot):
-    bot.add_cog(Build(bot))
+    bot.add_cog(Builds(bot))
             
